@@ -176,8 +176,6 @@ function updateLetterDensityView() {
     }
   });
 
-  console.log(letterDensityMap);
-
   if (letterDensityMapArray.length >= MAX_ALLOWED_LETTER_DENSITIES) {
     showSeeMoreButton();
     hideSeeLessButton();

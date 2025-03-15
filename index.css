@@ -84,6 +84,10 @@ label {
     margin-top: 1rem;
 }
 
+.additional-controls {
+    display: flex;
+}
+
 .input-area-metrics {
     display: flex;
     justify-content: space-between;
@@ -192,4 +196,52 @@ label {
     width: max-content;
     background: none;
     cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .page-wrapper {
+      padding: 1rem 5%;
+    }
+  
+    .page-title {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+        white-space: nowrap;
+    }
+
+    #input-area-section {
+        font-size: 1.25rem;
+    }
+
+    .input-area-metrics {
+        flex-direction: column;
+    }
+  
+    .metric-section {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    #letter-density-section {
+        margin-top: 0.5rem;
+    }
+
+    .additional-details-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .additional-controls {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .additional-control {
+        margin: 0.25rem 0;
+    }
+
+    .reading-time {
+        margin-top: 0.5rem;
+    }
 }
