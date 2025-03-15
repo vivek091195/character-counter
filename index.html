@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor | Character counter</title>
+    <script src="./index.js"></script>
+  </head>
+  <body class="dark-theme">
+    <div class="page-wrapper">
+      <div class="header-section">
+        <img
+          id="app-logo"
+          src="./assets/images/logo-dark-theme.svg"
+          alt="app-logo"
+        />
+        <img
+          src="./assets/images/icon-sun.svg"
+          alt="switch to light theme image"
+          id="theme-switcher"
+          style="cursor: pointer"
+        />
+      </div>
+      <h1 id="page-title" class="page-title">
+        Analyze your text<br />
+        in real-time.
+      </h1>
+      <textarea
+        id="input-area-section"
+        class="input-area-section"
+        placeholder="Start typing here… (or paste your text)"
+      ></textarea>
+      <p id="limit-reached-error">
+        Limit reached! Your text exceeds
+        <span id="error-word-count"></span> characters.
+      </p>
+      <div class="additional-details-section">
+        <div class="additional-controls">
+          <input type="checkbox" id="exclude-spaces" />
+          <label for="exclude-spaces">Exclude Spaces</label>
+          <input type="checkbox" id="set-character-limit" />
+          <label for="set-character-limit">Set Character Limit</label>
+          <input type="number" id="character-limit-value" />
+        </div>
+        <p class="reading-time">
+          Approx. reading time: <span id="reading-time-value">0</span> minute
+        </p>
+      </div>
+      <div class="input-area-metrics">
+        <div class="metric-section total-characters">
+          <div class="metric-value" id="total-characters">00</div>
+          <div class="metric-label">Total Characters</div>
+        </div>
+        <div class="metric-section word-count">
+          <div class="metric-value" id="word-count">00</div>
+          <div class="metric-label">Word Count</div>
+        </div>
+        <div class="metric-section sentence-count">
+          <div class="metric-value" id="sentence-count">00</div>
+          <div class="metric-label">Sentence Count</div>
+        </div>
+      </div>
+      <div id="letter-density-section">
+        <p class="letter-density-title">Letter Density</p>
+        <p id="no-letter-text">
+          No characters found. Start typing to see letter density.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
